@@ -1,18 +1,16 @@
-<!--
-
 ### Hi there 👋
-
-[![tmercier's 42 stats](https://badge42.vercel.app/api/v2/clafi69q000590fmnc94ufq04/stats?cursusId=21&coalitionId=59)](https://github.com/JaeSeoKim/badge42)
 
 ```c 
 {
-  char programming_language = C, C++;
+  char programming_language_used = C, C++;
   char *current_situation = "studying software engineering at CODAM (42 Amsterdam)";
-  infos.contact = "tmercier@student.codam.nl",
+  infos.contact = "tmercier@student.codam.nl";
 }
 ```
 
-<details><summary><strong> Projects Subjects and Grades </strong></summary><p>
+[![tmercier's 42 stats](https://badge42.vercel.app/api/v2/clafi69q000590fmnc94ufq04/stats?cursusId=21&coalitionId=59)](https://github.com/JaeSeoKim/badge42)
+
+<details><summary><strong> Click To See The Projects Subjects and My Grades </strong></summary><p>
 
 | Project         | Grade        | 
 | :---------------: |:-------------:|
@@ -32,6 +30,3 @@
 [4]: https://cdn.intra.42.fr/pdf/pdf/52094/en.subject.pdf "Subject"
 [5]: https://cdn.intra.42.fr/pdf/pdf/65489/en.subject.pdf "Subject"
 
-**t-mercier/t-mercier** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
--->
