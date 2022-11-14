@@ -1,10 +1,17 @@
 ### Hi there 👋
 
 ```c 
-{
-  char programming_language_used = C, C++;
+  char *programming_language_used = "C, C++";
   char *current_situation = "studying software engineering at CODAM (42 Amsterdam)";
+  int cohort_year = 2021;
   infos.contact = "tmercier@student.codam.nl";
+
+while (fail || !succeed)
+{
+  try++;
+  study++;
+  if (succeed)
+    break ;
 }
 ```
 | Progress Tracking | Projects | Grades |
