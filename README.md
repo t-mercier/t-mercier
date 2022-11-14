@@ -6,7 +6,7 @@
   int cohort_year = 2021;
   infos.contact = "tmercier@student.codam.nl";
 
-while (fail || !succeed)
+while (fail)
 {
   try++;
   study++;
