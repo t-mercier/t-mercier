@@ -6,13 +6,13 @@
   int cohort_year = 2021;
   infos.contact = "tmercier@student.codam.nl";
 
-while (fail)
-{
-  try++;
-  study++;
-  if (succeed)
-    break ;
-}
+  while (fail)
+  {
+    try++;
+    study++;
+    if (succeed)
+      break ;
+  }
 ```
 | Progress Tracking | Projects | Grades |
 | :---------------:|:-------------:|:-------------:|
