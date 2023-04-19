@@ -23,7 +23,7 @@
 [3]: https://github.com/t-mercier/42_libs "Repository"
 [4]: https://github.com/t-mercier/42_born2beroot "Repository"
 [5]: https://github.com/t-mercier/42_push_swap "Repository"
-[6]: https://github.com/t-mercier/42_fdf) "Repository"
+[6]: https://github.com/t-mercier/42_fdf "Repository"
 [7]: https://github.com/t-mercier/42_minitalk "Repository"
 [8]: https://github.com/t-mercier/42_minishell "Repository"
 [9]: https://github.com/t-mercier/42_philosophers "Repository"
