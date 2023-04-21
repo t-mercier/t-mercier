@@ -19,7 +19,7 @@
     <tr>
         <th>Progress Tracking</th>
         <th>Projects</th>
-        <th>Dev Tools</th>
+        <th>Dev</th>
         <th>Design</th>
     </tr>
     <tr>
