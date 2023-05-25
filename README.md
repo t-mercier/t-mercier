@@ -80,7 +80,7 @@ void dev_journey() {
         timothee.motivation += try_project(&timothee);
         if (timothee.frustration > timothee.motivation)
             break ;
-        if (timothee.blackhole == 0 {
+        if (timothee.blackhole == 0) {
             exit(FAILURE);
         }
     }
