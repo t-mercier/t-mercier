@@ -19,12 +19,12 @@ typedef struct s_study {
     char *school;
     char *situation;
     char *languages;
+    char *contact;
 } t_study;
 
 typedef struct s_student {
     t_dev project;
     t_study infos;
-    char *contact;
     int level;
     int motivation;
     int frustration;
@@ -39,8 +39,8 @@ t_student init_student() {
             .school = "CODAM | 42Amsterdam", 
             .situation = "studying software engineering",
             .languages = "C && C++", 
+            .contact = "contact@mercier.app",
         }, 
-        .contact = "contact@mercier.app",
         .level = 4.31,
         .motivation = 100, 
         .frustration = 0
