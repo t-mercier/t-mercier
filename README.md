@@ -1,4 +1,4 @@
-### Hi there 👋
+### If my C dev journey was a program ...
 
 ```c
 #include <stdbool.h>
