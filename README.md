@@ -41,7 +41,7 @@ t_student init_student() {
             .languages = "C && C++", 
         }, 
         .contact = "contact@mercier.app",
-        .level = 1,
+        .level = 4.31,
         .motivation = 100, 
         .frustration = 0
         .blackhole = 900,
