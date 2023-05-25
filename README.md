@@ -54,7 +54,7 @@ int study(t_dev *project, int level){
     return (level >= project->difficulty) ? SUCCESS : FAILURE;
 }
 
-int try_project(t_student *student){
+int student_progress(t_student *student){
     int rush_adrenaline = 0;
     while (!student->project.succeed && student->blackhole--) {
         student->project.succeed = (study(&student->project, student->level) == SUCCESS);
@@ -71,19 +71,30 @@ int try_project(t_student *student){
     return rush_adrenaline;
 }
 
-void dev_journey() {
-    t_student timothee = init_student();
+void    try_project(t_student *student){
     t_dev p[PROJECTS] = {0};
+    int holidays = 3; 
     
     for (int i = 0; i < PROJECTS; i++){
         timothee.project = p[i];
-        timothee.motivation += try_project(&timothee);
-        if (timothee.frustration > timothee.motivation)
+        student.motivation += student_progress(timothee);
+        if (timothee.frustration < timothee.motivation){
+            continue ;
+        take_break(timothee)
+        if (!holidays--)
             break ;
-        if (timothee.blackhole == 0) {
-            exit(FAILURE);
-        }
     }
+}
+
+int main(){
+    t_student timothee = init_student();
+   
+    while (1){
+        try_project(&timothee);
+        if (timothee.blackhole == 0)
+            exit(FAILURE);
+    }
+    return 0;
 }
 
 ```
