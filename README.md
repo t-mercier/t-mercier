@@ -1,5 +1,3 @@
-#### My software engineer journey as a (simple) C program ...
-
 ```c
 #include <stdbool.h>
 #include <stdlib.h>
