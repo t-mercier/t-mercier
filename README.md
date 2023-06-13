@@ -1,5 +1,7 @@
 ```c
+
 #include <stdbool.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 #define SUCCESS 1
@@ -8,91 +10,102 @@
 #define XP_PER_LEVEL 500
 
 typedef struct s_dev {
-    size_t days;
-    int difficulty;
-    bool succeed;
+  size_t days;
+  int difficulty;
+  bool succeed;
 } t_dev;
 
 typedef struct s_study {
-    char *school;
-    char *situation;
-    char *languages;
-    char *contact;
+  char *school;
+  char *situation;
+  char *languages;
+  char *contact;
 } t_study;
 
 typedef struct s_student {
-    t_dev project;
-    t_study infos;
-    int level;
-    int motivation;
-    int frustration;
-    int xp;
-    size_t blackhole;
+  t_dev project;
+  t_study infos;
+  float level;
+  int motivation;
+  int frustration;
+  int xp;
+  size_t blackhole;
 } t_student;
 
-t_student init_student() {
-    t_student student = {
-        .project = {0, 1, false},
-        .infos = {
-            .school = "CODAM | 42Amsterdam", 
-            .situation = "studying software engineering",
-            .languages = "C && C++", 
-            .contact = "contact@mercier.app",
-        }, 
-        .level = 4.31,
-        .motivation = 100, 
-        .frustration = 0
-        .blackhole = 900,
-        .xp = 0,
-    };
-    return student;
+t_student init_student(void) {
+  t_student student = {
+      .project = {0, 1, false},
+      .infos =
+          {
+              .school = "CODAM | 42Amsterdam",
+              .situation = "studying software engineering",
+              .languages = "C && C++",
+              .contact = "contact@mercier.app",
+          },
+      .level = 4.31,
+      .motivation = 100,
+      .frustration = 0,
+      .blackhole = 900,
+      .xp = 0,
+  };
+  return (student);
 }
 
-int study(t_dev *project, int level){
-    return (level >= project->difficulty) ? SUCCESS : FAILURE;
+int study(t_dev *project, int level) {
+  return ((level >= project->difficulty) ? SUCCESS : FAILURE);
 }
 
-int student_progress(t_student *student){
-    int rush_adrenaline = 0;
-    while (!student->project.succeed && student->blackhole--) {
-        student->project.succeed = (study(&student->project, student->level) == SUCCESS);
-        rush_adrenaline += (student->project.succeed) ? 1 : -1;
-        student->frustration += (!student->project.succeed) ? 1 : 0;
-        student->xp += (student->project.succeed) ? 100 : 0;
-        if (student->xp >= student->level * XP_PER_LEVEL) {
-            student->xp = 0;
-            student->level++;
-            student->motivation++;
-        }
-        student->project.days++;
+int student_progress(t_student *student) {
+  int rush_adrenaline;
+
+  rush_adrenaline = 0;
+  while (!student->project.succeed || student->blackhole--) {
+    student->project.succeed =
+        (study(&student->project, student->level) == SUCCESS);
+    rush_adrenaline += (student->project.succeed) ? 1 : -1;
+    student->frustration += (!student->project.succeed) ? 1 : 0;
+    student->xp += (student->project.succeed) ? 100 : 0;
+    if (student->xp >= student->level * XP_PER_LEVEL) {
+      student->xp = 0;
+      student->level++;
+      student->motivation++;
     }
-    return rush_adrenaline;
+    student->project.days++;
+  }
+  return (rush_adrenaline);
 }
 
-void    try_project(t_student *student){
-    t_dev p[PROJECTS] = {0};
-    int holidays = 3; 
-    
-    for (int i = 0; i < PROJECTS; i++){
-        timothee.project = p[i];
-        student.motivation += student_progress(timothee);
-        if (timothee.frustration < timothee.motivation){
-            continue ;
-        take_break(timothee)
-        if (!holidays--)
-            break ;
-    }
+int i = 0;
+
+int try_project(t_student *student) {
+  t_dev p[PROJECTS];
+  int holidays;
+
+  holidays = 3;
+  for ( ; i < PROJECTS; i++) {
+    student->project = p[i];
+    student->motivation += student_progress(student);
+    if (student->project.succeed)
+      printf("Project %d -> SUCCESS\n", i);
+    if (student->frustration < student->motivation)
+      continue;
+    if (!holidays--)
+      break;
+  }
+  if (i == PROJECTS)
+    return (printf("CONGRATS ! Student finished the curriculum\n"), 0);
+  printf("Student still has %d projects to finish\n", PROJECTS - i);
+  return (try_project(student), 1);
 }
 
-int main(){
-    t_student timothee = init_student();
-   
-    while (1){
-        try_project(&timothee);
-        if (timothee.blackhole == 0)
-            exit(FAILURE);
-    }
-    return 0;
+int main(void) {
+  t_student timothee = init_student();
+
+  while (try_project(&timothee)) {
+    if (timothee.blackhole == 0)
+      exit(FAILURE);
+  }
+  return (0);
 }
 
 ```
