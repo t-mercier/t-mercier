@@ -1,3 +1,5 @@
+I mostly use <a href="https://git.devo.pw/timothee">Gitea</a> now, so this github isn't really updated ... 🥲
+
 ```c
 #define SUCCESS 1
 #define FAILURE 0
