@@ -1,9 +1,4 @@
 ```c
-
-#include <stdbool.h>
-#include <stdio.h>
-#include <stdlib.h>
-
 #define SUCCESS 1
 #define FAILURE 0
 
@@ -20,30 +15,12 @@ typedef struct s_student {
   char *contact;
 } t_student;
 
-t_student init_student(void) {
-  t_student student = {
-      .school = "CODAM | 42Amsterdam",
-      .situation = "studying software engineering",
-      .languages = "C && C++",
-      .contact = "contact@mercier.app",
-  };
-  return (student);
-}
-
-int main(void) {
-  t_student timothee = init_student();
-  t_dev project[n];
-  
-  while (try_project(&timothee, &project[n])) {
-    if (timothee.blackhole == 0)
-      exit(FAILURE);
-    if (project[n].succeed)
-      project[n].difficulty++;
-    project[n].days++;
-  }
-  return (0);
-}
-
+t_student student = {
+    .school = "CODAM | 42Amsterdam",
+    .situation = "studying software engineering",
+    .languages = "C && C++",
+    .contact = "contact@mercier.app",
+};
 ```
 <table>
     <tr>
