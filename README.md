@@ -2,16 +2,12 @@
 <br>
 	
 [![linkedin](https://img.shields.io/badge/-timothee-313131?style=flat-square&labelColor=green&logo=LinkedIn&logoColor=black&color=green)](https://www.linkedin.com/in/timotheem/) &nbsp;&nbsp; [![Static Badge](https://img.shields.io/badge/-myGitea-313131?style=flat-square&labelColor=green&logo=Gitea&logoColor=black&color=green)](https://git.devo.pw/timothee)
-<br>   
-   <table cellpadding="0" cellspacing="0" border="0">    
-     <tr>
-        <td><br>
-<div align="center">
-<a href="https://git.devo.pw/timothee"> <img src="https://github.com/t-mercier/t-mercier/assets/94700601/dfe7185d-72bf-4e98-9ec0-11fc2a39d074">
-</a>  
-<br>
-</div>
+
+[![Alt Text](https://i.ibb.co/FbJxhPY/273194633-dfe7185d-72bf-4e98-9ec0-11fc2a39d074.gif)](https://git.devo.pw/timothee)
+
   
+</div>
+
 ```
 t_student timothee = {
     .school = "CODAM | 42Amsterdam",
