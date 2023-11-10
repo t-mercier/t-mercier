@@ -3,7 +3,7 @@
 	
 [![linkedin](https://img.shields.io/badge/-timothee-313131?style=flat-square&labelColor=green&logo=LinkedIn&logoColor=black&color=green)](https://www.linkedin.com/in/timotheem/) &nbsp;&nbsp; [![Static Badge](https://img.shields.io/badge/-myGitea-313131?style=flat-square&labelColor=green&logo=Gitea&logoColor=black&color=green)](https://git.devo.pw/timothee)
 
-[![Alt Text](https://i.ibb.co/FbJxhPY/273194633-dfe7185d-72bf-4e98-9ec0-11fc2a39d074.gif)](https://git.devo.pw/timothee)
+[![](https://i.ibb.co/FbJxhPY/273194633-dfe7185d-72bf-4e98-9ec0-11fc2a39d074.gif)](https://git.devo.pw/timothee)
 
   
 </div>
