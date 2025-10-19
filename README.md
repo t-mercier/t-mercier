@@ -16,13 +16,6 @@ t_student timothee = {
     .contact = "timothee@mercier.app",
 }; 
 ```
-<div align="center">
-	
-----> &nbsp;&nbsp;  [![Static Badge](https://img.shields.io/badge/-myGitea-313131?style=flat-square&labelColor=green&logo=Gitea&logoColor=black&color=green)](https://git.devo.pw/timothee)  &nbsp;&nbsp; <----
-
-
-
-</div>
 
 </td>
 <td>
