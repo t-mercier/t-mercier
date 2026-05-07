@@ -14,8 +14,7 @@ struct Engineer {
     std::string                  focus      = "Maps & Navigation";             // 🗺️
     std::array<std::string, 3>   languages  = { "C#", "C++", "Kotlin" };       // 💻
     std::vector<std::string>     bindings   = { "JNI", "gRPC", "protobuf" };   // 🔌 cross-language
-    std::set<std::string>        passions   = { "performance", "low-latency" };// ⚡
-    std::list<std::string>       workflows  = { "Claude", "Cursor", "MCP" };   // 🤖 AI-powered
+    std::list<std::string>       workflows  = { "Claude", "OpenAI", "MCP" };   // 🤖 AI-powered
     std::bitset<24>              location   = 0b01000001'01001101'01010011;    // 📍 "AMS"
     std::optional<std::string>   contact    = "mercier.timothee@pm.me";        // 📬
 };
