@@ -96,20 +96,5 @@ struct Engineer {
 ---
 
 <div align="center">
-
-### 📊 GitHub Stats
-
-<img src="https://github-readme-stats.vercel.app/api?username=timotheem&show_icons=true&theme=github_dark&hide_border=true&count_private=true" height="160" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=timotheem&theme=github-dark&hide_border=true" height="160" />
-
-<br>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=timotheem&layout=compact&theme=github_dark&hide_border=true&langs_count=8" height="160" />
-
-</div>
-
----
-
-<div align="center">
-  <i>« On apprend en faisant. »</i>
+  <i>« You have to have chaos within you to give birth to a dancing star. » – Friedrich Nietzsche</i>
 </div>
